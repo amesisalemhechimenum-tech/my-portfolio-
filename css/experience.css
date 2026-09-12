@@ -1,0 +1,550 @@
+/* =========================================
+   EXPERIENCE PAGE
+========================================= */
+
+.experience-page {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.experience-hero {
+    min-height: auto;
+    display: flex;
+    align-items: center;
+    padding-top: 130px;
+}
+
+.experience-hero-content {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.experience-hero h1 {
+    margin: 25px 0;
+    color: var(--white);
+    font-size: clamp(3rem, 7vw, 6.3rem);
+    line-height: .98;
+    font-weight: 800;
+    letter-spacing: -3px;
+}
+
+.experience-hero h1 span {
+    display: block;
+    background: linear-gradient(
+        90deg,
+        var(--cyan),
+        var(--blue),
+        var(--violet),
+        var(--pink)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.experience-hero-text {
+    max-width: 1200px;
+    margin: auto;
+    color: var(--silver);
+    font-size: 1.08rem;
+    line-height: 1.9;
+}
+
+.journey-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+    padding: 12px 20px;
+    border: 1px solid var(--border);
+    border-radius: 50px;
+    background: var(--glass);
+    color: var(--soft-white);
+}
+
+.journey-badge i {
+    color: var(--green);
+}
+
+
+/* =========================================
+   SECTION HEADING
+========================================= */
+
+.experience-timeline .section-heading,
+.experience-strengths .section-heading {
+    max-width: 760px;
+    margin: 0 auto 65px;
+    text-align: center;
+}
+
+.experience-timeline .section-heading h2,
+.experience-strengths .section-heading h2 {
+    margin: 20px 0;
+    color: var(--white);
+    font-size: clamp(2.4rem, 5vw, 4.5rem);
+    line-height: 1;
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+
+.experience-timeline .section-heading h2 span,
+.experience-strengths .section-heading h2 span {
+    color: var(--cyan);
+}
+
+.experience-timeline .section-heading p {
+    max-width: 650px;
+    margin: auto;
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   TIMELINE
+========================================= */
+
+.timeline {
+    position: relative;
+    max-width: 2800px;
+    width:100%;
+    margin: auto;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 32px;
+    width: 2px;
+    background: linear-gradient(
+        to bottom,
+        var(--cyan),
+        var(--violet),
+        var(--pink)
+    );
+    opacity: .5;
+}
+
+.timeline-item {
+    position: relative;
+    display: grid;
+    grid-template-columns: 65px 1fr;
+    gap: 30px;
+    margin-bottom: 35px;
+}
+
+.timeline-marker {
+    position: relative;
+    z-index: 2;
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 225, 255, .35);
+    border-radius: 50%;
+    background: var(--space-blue);
+    color: var(--cyan);
+    font-size: 1.3rem;
+    box-shadow: 0 0 25px var(--cyan-glow);
+}
+
+.timeline-content {
+    padding: 32px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-medium);
+    background: var(--glass);
+    box-shadow: 0 20px 50px var(--shadow);
+    transition:
+        transform var(--transition),
+        border-color var(--transition);
+}
+
+.timeline-content:hover {
+    transform: translateX(8px);
+    border-color: rgba(0, 225, 255, .35);
+}
+
+.timeline-date {
+    color: var(--cyan);
+    font-size: .72rem;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+}
+
+.timeline-content h3 {
+    margin: 13px 0;
+    color: var(--white);
+    font-size: 1.6rem;
+    font-weight: 750;
+}
+
+.timeline-content p {
+    margin-bottom: 22px;
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+.timeline-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.timeline-tags span {
+    padding: 7px 12px;
+    border: 1px solid var(--border);
+    border-radius: 30px;
+    background: rgba(255,255,255,.04);
+    color: var(--silver);
+    font-size: .72rem;
+}
+
+
+/* =========================================
+   PHILOSOPHY
+========================================= */
+
+.experience-philosophy {
+    padding-top: 80px;
+}
+
+.philosophy-card {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 30px;
+    align-items: center;
+    padding: 55px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-large);
+    background:
+        linear-gradient(
+            135deg,
+            rgba(0,225,255,.07),
+            rgba(142,92,255,.09)
+        );
+    box-shadow: 0 30px 70px var(--shadow);
+}
+
+.philosophy-icon {
+    width: 75px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+    background: rgba(0,225,255,.1);
+    border: 1px solid rgba(0,225,255,.25);
+    color: var(--cyan);
+    font-size: 2rem;
+    box-shadow: 0 0 30px var(--cyan-glow);
+}
+
+.philosophy-content h2 {
+    margin: 18px 0;
+    color: var(--white);
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    line-height: 1;
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+
+.philosophy-content h2 span {
+    color: var(--cyan);
+}
+
+.philosophy-content p {
+    max-width: 750px;
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   STRENGTH CARDS
+========================================= */
+
+.strength-card {
+    height: 100%;
+    padding: 35px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-medium);
+    background: var(--glass);
+    transition:
+        transform var(--transition),
+        border-color var(--transition),
+        box-shadow var(--transition);
+}
+
+.strength-card:hover {
+    transform: translateY(-9px);
+    border-color: rgba(0,225,255,.35);
+    box-shadow:
+        0 25px 55px var(--shadow),
+        0 0 30px var(--cyan-glow);
+}
+
+.strength-card > i {
+    color: var(--cyan);
+    font-size: 2rem;
+}
+
+.strength-card h3 {
+    margin: 22px 0 12px;
+    color: var(--white);
+    font-size: 1.4rem;
+}
+
+.strength-card p {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   CTA
+========================================= */
+
+.experience-cta {
+    padding-bottom: 100px;
+}
+
+.experience-cta .cta-box {
+    position: relative;
+    overflow: hidden;
+    padding: 90px 30px;
+    text-align: center;
+    border: 1px solid var(--border);
+    border-radius: 40px;
+    background:
+        linear-gradient(
+            135deg,
+            rgba(0,225,255,.08),
+            rgba(142,92,255,.1),
+            rgba(255,83,190,.05)
+        );
+    box-shadow: 0 30px 80px var(--shadow);
+}
+
+.experience-cta .cta-glow {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    top: -210px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background: var(--cyan-glow);
+    filter: blur(60px);
+    pointer-events: none;
+}
+
+.experience-cta .section-kicker,
+.experience-cta h2,
+.experience-cta p,
+.experience-cta .main-button {
+    position: relative;
+    z-index: 2;
+}
+
+.experience-cta h2 {
+    max-width: 850px;
+    margin: 25px auto;
+    color: var(--white);
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    line-height: 1;
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+
+.experience-cta h2 span {
+    display: block;
+    color: var(--cyan);
+}
+
+.experience-cta p {
+    max-width: 650px;
+    margin: 0 auto 35px;
+    color: var(--silver);
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 991px) {
+
+    .experience-hero {
+        min-height: 70vh;
+        padding-top: 110px;
+    }
+
+    .experience-hero h1 {
+        font-size: clamp(3rem, 9vw, 5rem);
+    }
+
+    .philosophy-card {
+        padding: 40px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 767px) {
+
+    .experience-hero {
+        min-height: auto;
+        padding-top: 120px;
+        padding-bottom: 70px;
+    }
+
+    .experience-hero h1 {
+        font-size: clamp(2.7rem, 13vw, 4rem);
+        letter-spacing: -2px;
+    }
+
+    .experience-hero-text {
+        font-size: 1rem;
+        line-height: 1.75;
+    }
+
+    .experience-timeline .section-heading,
+    .experience-strengths .section-heading {
+        margin-bottom: 45px;
+    }
+
+    .experience-timeline .section-heading h2,
+    .experience-strengths .section-heading h2 {
+        font-size: clamp(2.2rem, 10vw, 3.2rem);
+    }
+
+    .timeline::before {
+        left: 25px;
+    }
+
+    .timeline-item {
+        grid-template-columns: 50px 1fr;
+        gap: 18px;
+    }
+
+    .timeline-marker {
+        width: 50px;
+        height: 50px;
+        font-size: 1rem;
+    }
+
+    .timeline-content {
+        padding: 25px;
+    }
+
+    .timeline-content h3 {
+        font-size: 1.35rem;
+    }
+
+    .philosophy-card {
+        grid-template-columns: 1fr;
+        padding: 32px 25px;
+        border-radius: 28px;
+    }
+
+    .philosophy-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .experience-cta .cta-box {
+        padding: 65px 22px;
+        border-radius: 28px;
+    }
+
+    .experience-cta h2 {
+        font-size: clamp(2.3rem, 11vw, 3.5rem);
+    }
+
+}
+
+
+/* =========================================
+   SMALL PHONES
+========================================= */
+
+@media (max-width: 480px) {
+
+    .experience-hero {
+        padding-top: 105px;
+    }
+
+    .experience-hero h1 {
+        font-size: 2.7rem;
+    }
+
+    .timeline-item {
+        grid-template-columns: 42px 1fr;
+        gap: 14px;
+    }
+
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timeline-marker {
+        width: 42px;
+        height: 42px;
+    }
+
+    .timeline-content {
+        padding: 21px;
+    }
+
+    .timeline-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .timeline-content p {
+        font-size: .9rem;
+    }
+
+    .philosophy-card {
+        padding: 28px 21px;
+    }
+
+    .philosophy-content h2 {
+        font-size: 2.2rem;
+    }
+
+    .experience-cta .cta-box {
+        padding: 55px 18px;
+    }
+
+}
+
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .timeline-content,
+    .strength-card {
+        transition: none;
+    }
+
+}

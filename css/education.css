@@ -1,0 +1,406 @@
+/* =========================================
+   EDUCATION PAGE
+========================================= */
+
+.education-page {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.education-hero {
+    min-height: auto;
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.education-hero-content {
+    max-width: 850px;
+}
+
+.education-hero h1 {
+    margin: 25px 0;
+    color: var(--white);
+    font-size: clamp(3rem, 7vw, 6.3rem);
+    line-height: 0.98;
+    font-weight: 800;
+    letter-spacing: -3px;
+}
+
+.education-hero h1 span {
+    color: var(--cyan);
+    text-shadow: 0 0 30px var(--cyan-glow);
+}
+
+.education-hero-text {
+    max-width: 720px;
+    margin: 0 0 30px;
+    color: var(--silver);
+    font-size: 1.05rem;
+    line-height: 1.9;
+}
+
+.education-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    border: 1px solid var(--border);
+    border-radius: 50px;
+    background: var(--glass);
+    color: var(--soft-white);
+    font-size: 0.85rem;
+}
+
+.education-badge i {
+    color: var(--cyan);
+}
+
+
+/* =========================================
+   FORMAL EDUCATION CARD
+========================================= */
+
+.education-card {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 30px;
+    align-items: start;
+    padding: 50px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-large);
+    background:
+        linear-gradient(
+            135deg,
+            rgba(0, 225, 255, 0.06),
+            rgba(142, 92, 255, 0.06)
+        );
+    box-shadow: 0 25px 60px var(--shadow);
+}
+
+.education-card-icon {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background: rgba(0, 225, 255, 0.1);
+    border: 1px solid rgba(0, 225, 255, 0.25);
+    color: var(--cyan);
+    font-size: 1.7rem;
+    box-shadow: 0 0 30px var(--cyan-glow);
+}
+
+.education-status {
+    display: inline-block;
+    margin-bottom: 12px;
+    padding: 6px 12px;
+    border-radius: 30px;
+    background: rgba(77, 255, 181, 0.12);
+    border: 1px solid rgba(77, 255, 181, 0.3);
+    color: var(--green);
+    font-size: 0.68rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.education-card-content h3 {
+    margin-bottom: 8px;
+    color: var(--white);
+    font-size: 1.7rem;
+    font-weight: 800;
+}
+
+.education-institution {
+    margin-bottom: 16px;
+    color: var(--cyan);
+    font-size: 0.92rem;
+    font-weight: 700;
+}
+
+.education-card-content > p {
+    margin-bottom: 22px;
+    color: var(--muted);
+    line-height: 1.85;
+}
+
+.education-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.education-tags span {
+    padding: 7px 12px;
+    border: 1px solid var(--border);
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.04);
+    color: var(--silver);
+    font-size: 0.72rem;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   SELF-DIRECTED LEARNING CARDS
+========================================= */
+
+.self-card {
+    height: 100%;
+    padding: 35px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-medium);
+    background: var(--glass);
+    transition:
+        transform var(--transition),
+        border-color var(--transition),
+        box-shadow var(--transition);
+}
+
+.self-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(0, 225, 255, 0.35);
+    box-shadow:
+        0 25px 55px var(--shadow),
+        0 0 30px var(--cyan-glow);
+}
+
+.self-icon {
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    border-radius: 17px;
+    background: rgba(0, 225, 255, 0.08);
+    color: var(--cyan);
+    font-size: 1.45rem;
+}
+
+.self-card h3 {
+    margin-bottom: 15px;
+    color: var(--white);
+    font-size: 1.35rem;
+    font-weight: 750;
+}
+
+.self-card p {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.85;
+}
+
+
+/* =========================================
+   CERTIFICATIONS PLACEHOLDER
+========================================= */
+
+.cert-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 55px 30px;
+    text-align: center;
+    border: 1px dashed var(--border);
+    border-radius: var(--radius-large);
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.cert-placeholder i {
+    color: var(--muted);
+    font-size: 2.2rem;
+}
+
+.cert-placeholder p {
+    max-width: 420px;
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.92rem;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   CTA
+========================================= */
+
+.education-cta {
+    padding-bottom: 100px;
+}
+
+.education-cta .cta-box {
+    position: relative;
+    overflow: hidden;
+    padding: 90px 30px;
+    text-align: center;
+    border: 1px solid var(--border);
+    border-radius: 40px;
+    background:
+        linear-gradient(
+            135deg,
+            rgba(0, 225, 255, 0.08),
+            rgba(142, 92, 255, 0.1),
+            rgba(255, 83, 190, 0.05)
+        );
+    box-shadow: 0 30px 80px var(--shadow);
+}
+
+.education-cta .cta-glow {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    top: -210px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background: var(--cyan-glow);
+    filter: blur(60px);
+    pointer-events: none;
+}
+
+.education-cta .section-kicker,
+.education-cta h2,
+.education-cta p,
+.education-cta .primary-button {
+    position: relative;
+    z-index: 2;
+}
+
+.education-cta h2 {
+    max-width: 800px;
+    margin: 25px auto;
+    color: var(--white);
+    font-size: clamp(2.3rem, 5vw, 4.5rem);
+    line-height: 1.05;
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+
+.education-cta h2 span {
+    display: block;
+    color: var(--cyan);
+}
+
+.education-cta p {
+    max-width: 620px;
+    margin: 0 auto 35px;
+    color: var(--silver);
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 991px) {
+
+    .education-hero {
+        min-height: auto;
+        padding-top: 110px;
+    }
+
+    .education-card {
+        padding: 38px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 767px) {
+
+    .education-hero {
+        padding-top: 120px;
+        padding-bottom: 60px;
+    }
+
+    .education-hero h1 {
+        font-size: clamp(2.7rem, 13vw, 4rem);
+        letter-spacing: -2px;
+    }
+
+    .education-hero-text {
+        font-size: 0.98rem;
+        line-height: 1.8;
+    }
+
+    .education-card {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 30px 25px;
+        border-radius: 28px;
+    }
+
+    .education-card-content h3 {
+        font-size: 1.4rem;
+    }
+
+    .self-card {
+        padding: 28px;
+    }
+
+    .cert-placeholder {
+        padding: 40px 22px;
+    }
+
+    .education-cta .cta-box {
+        padding: 60px 22px;
+        border-radius: 28px;
+    }
+
+    .education-cta h2 {
+        font-size: clamp(2.1rem, 10vw, 3.2rem);
+    }
+
+}
+
+
+/* =========================================
+   SMALL PHONES
+========================================= */
+
+@media (max-width: 420px) {
+
+    .education-hero {
+        padding-top: 100px;
+    }
+
+    .education-hero h1 {
+        font-size: 2.6rem;
+    }
+
+    .education-card {
+        padding: 25px 18px;
+    }
+
+    .education-cta .cta-box {
+        padding: 45px 18px;
+    }
+
+}
+
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .self-card {
+        transition: none;
+    }
+
+}
