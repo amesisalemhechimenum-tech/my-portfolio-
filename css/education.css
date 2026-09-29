@@ -36,6 +36,7 @@
 .education-hero h1 span {
     color: var(--cyan);
     text-shadow: 0 0 30px var(--cyan-glow);
+    white-space:nowrap;
 }
 
 .education-hero-text {
